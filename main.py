@@ -85,7 +85,3 @@ async def upload_style_model(model_file: UploadFile = File(..., description="PyT
     # For now, it's a placeholder to show API extensibility
     return {"message": f"Model {model_file.filename} uploaded successfully. Integration pending.", "status": "received"}
 
-@app.get("/test/")
-def test_endpoint():
-    return {"message": "Test endpoint working!"}
-
